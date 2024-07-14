@@ -6,7 +6,7 @@
 #    By: xjose <xjose@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/08 19:07:10 by jwon              #+#    #+#              #
-#    Updated: 2024/07/14 19:57:49 by xjose            ###   ########.fr        #
+#    Updated: 2024/07/14 20:20:17 by xjose            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ IMG		= $(WIN)img/*.c
 MAP		= $(LIB)map/*.c
 PLAYER	= $(LIB)player/*.c
 
-LIBFT	= $(LIB)libft/
+LIBFT	= ./libft/
 MINILIBX = ./minilibx
 
 SRC		= $(WIN)*.c\
