@@ -6,10 +6,13 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 11:58:52 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/13 18:10:19 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/15 18:42:14 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FT_WINDOW_H
+
+# define FT_WINDOW_H
 typedef struct s_window
 {
 	stringg			title;
@@ -26,3 +29,5 @@ void				ft_clear_window(t_window *window);
 t_window			*ft_create_window(stringg title, int width, int height,
 						enum e_color backgorund);
 int					ft_close_window(t_window *win);
+
+#endif

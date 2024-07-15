@@ -6,10 +6,13 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 13:05:09 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/13 17:22:34 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/15 18:41:58 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FT_EVENTS_H
+
+# define FT_EVENTS_H
 typedef struct s_event
 {
 	int				code;
@@ -31,3 +34,5 @@ typedef struct s_event
 # define MOUSE_ENTER (t_event) { 7, 1L << 4 }
 
 # define MOUSE_LEAVE (t_event) { 8, 1L << 5 }
+
+#endif

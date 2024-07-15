@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 18:06:21 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/14 19:17:12 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/15 19:07:33 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ t_map		g_map;
 
 int	ft_move_player(int key, void *param)
 {
+	(void)param;
 	if (KEY_W == key)
 		g_map.map = ft_find_player(&g_map, 2);
 	else if (KEY_S == key)
@@ -29,6 +30,7 @@ int	ft_move_player(int key, void *param)
 	ft_get_item_map(&g_map);
 	ft_print_terminal(g_map);
 	ft_inc_map(g_map, CENTER, false);
+	return (1);
 }
 
 static void	ft_check_map(int fd)
@@ -43,11 +45,11 @@ static void	ft_check_map(int fd)
 static void	ft_init_map(t_window *win)
 {
 	g_map.win = win;
-	g_map.obs.block = "./assets/wall.xpm";
-	g_map.obs.exit = "./assets/E0.xpm";
 	g_map.obs.empty = "./assets/0.xpm";
-	g_map.obs.player = "./assets/P0.xpm";
-	g_map.obs.jaba = "./assets/1C.xpm";
+	g_map.obs.block = "./assets/1.xpm";
+	g_map.obs.exit = "./assets/E.xpm";
+	g_map.obs.player = "./assets/P.xpm";
+	g_map.obs.jaba = "./assets/C.xpm";
 	g_map.igh = 40;
 	g_map.igw = 40;
 	ft_inc_map(g_map, CENTER, true);

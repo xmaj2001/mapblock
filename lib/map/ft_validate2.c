@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 15:39:22 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/14 19:13:22 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/15 18:52:10 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,12 +82,10 @@ int	ft_open_map(stringg path)
 {
 	size_t	len;
 	int		fd;
-	int		error;
 	char	*extension;
 
 	len = ft_strlen(path);
 	fd = 0;
-	error = 0;
 	if (len == 0 || len <= 4)
 		ft_ms_error(path);
 	else

@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 13:34:35 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/14 15:59:23 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/15 18:49:53 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@ bool	ft_is_valide_width(char **map)
 {
 	int		p;
 	t_size	size;
+	size_t	width;
 
 	size = ft_get_size_map(map);
+	width = size.width;
 	p = 0;
 	while (map[p])
 	{
-		if (ft_strlen(map[p]) != size.width)
+		if (ft_strlen(map[p]) != width)
 			return (false);
 		p++;
 	}

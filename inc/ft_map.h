@@ -6,10 +6,13 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 18:28:57 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/14 18:52:09 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/15 18:38:38 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FT_MAP_H
+
+# define FT_MAP_H
 typedef struct s_objects
 {
 	stringg		exit;
@@ -61,3 +64,5 @@ bool			ft_items_required(char **map);
 t_map			*ft_get_map(int fd, t_map *map);
 t_size			ft_get_size_map_win(char **map, int size_img);
 t_size			ft_get_size_map(char **map);
+
+#endif

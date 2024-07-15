@@ -6,13 +6,13 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 08:56:52 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/13 18:31:23 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/15 18:36:21 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TYPEDATE_H
+#ifndef FT_TYPEDATE_H
 
-# define TYPEDATE_H
+# define FT_TYPEDATE_H
 # define stringg char *
 # define false 0
 # define true 1
