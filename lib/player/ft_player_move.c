@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 17:43:19 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/13 21:43:10 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 16:17:57 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,13 +66,6 @@ char	ft_move_player_top(t_map *mp, t_point point)
 			mp->steps++;
 		}
 	}
-	// else if (map[point.y - 2][point.x] == '0')
-	// {
-	// 	map[point.y][point.x] = '0';
-	// 	map[point.y - 1][point.x] = 'P';
-	// 	map[point.y - 2][point.x] = '1';
-	// 	mp->move++;
-	// }
 	return (map[point.y][point.x]);
 }
 
@@ -92,13 +85,5 @@ char	ft_move_player_down(t_map *mp, t_point point)
 			mp->steps++;
 		}
 	}
-	// else if (map[point.y + 1][point.x] == '1' && map[point.y
-	// 	+ 2][point.x] == '0')
-	// {
-	// 	map[point.y][point.x] = '0';
-	// 	map[point.y + 1][point.x] = 'P';
-	// 	map[point.y + 2][point.x] = '1';
-	// 	mp->move++;
-	// }
 	return (map[point.y][point.x]);
 }

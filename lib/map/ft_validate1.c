@@ -6,13 +6,13 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 13:34:35 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/15 18:49:53 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 17:05:49 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../so_long.h"
 
-bool	ft_is_valide_width(char **map)
+int	ft_is_valide_width(char **map)
 {
 	int		p;
 	t_size	size;
@@ -24,45 +24,45 @@ bool	ft_is_valide_width(char **map)
 	while (map[p])
 	{
 		if (ft_strlen(map[p]) != width)
-			return (false);
+			return (FALSE);
 		p++;
 	}
-	return (true);
+	return (TRUE);
 }
 
-bool	ft_is_rectangle(t_size size)
+int	ft_is_rectangle(t_size size)
 {
 	return ((size.width > size.height) || (size.width < size.height));
 }
 
-bool	ft_is_valide_char(char ch)
+int	ft_is_valide_char(char ch)
 {
 	if (ch == '0')
-		return (true);
+		return (TRUE);
 	else if (ch == '1')
-		return (true);
+		return (TRUE);
 	else if (ch == 'C')
-		return (true);
+		return (TRUE);
 	else if (ch == 'E')
-		return (true);
+		return (TRUE);
 	else if (ch == 'P')
-		return (true);
+		return (TRUE);
 	else if (ch == '\n')
-		return (true);
+		return (TRUE);
 	else
-		return (false);
+		return (FALSE);
 }
 
-bool	ft_is_valide_items(t_items item)
+int	ft_is_valide_items(t_items item)
 {
 	if (item.player == 1 && item.jaba >= 1 && item.exit == 1 && item.block >= 1
 		&& item.empty >= 1)
-		return (true);
+		return (TRUE);
 	else
-		return (false);
+		return (FALSE);
 }
 
-bool	ft_items_required(char **map)
+int	ft_items_required(char **map)
 {
 	t_point	p;
 
@@ -75,11 +75,11 @@ bool	ft_items_required(char **map)
 			if (!ft_is_valide_char(map[p.y][p.x]))
 			{
 				ft_printf("Error\n");
-				return (false);
+				return (FALSE);
 			}
 			p.x++;
 		}
 		p.y++;
 	}
-	return (true);
+	return (TRUE);
 }

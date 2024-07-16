@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 09:01:17 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/13 18:12:47 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 10:51:12 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_clear_window(t_window *window)
 	free(window);
 }
 
-t_window	*ft_create_window(stringg title, int width, int height,
+t_window	*ft_create_window(char *title, int width, int height,
 		enum e_color backgorund)
 {
 	t_window	*window;

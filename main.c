@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 18:06:21 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/15 19:07:33 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 17:10:06 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_move_player(int key, void *param)
 		ft_close_window(g_map.win);
 	ft_get_item_map(&g_map);
 	ft_print_terminal(g_map);
-	ft_inc_map(g_map, CENTER, false);
+	ft_inc_map(g_map, CENTER, FALSE);
 	return (1);
 }
 
@@ -52,7 +52,7 @@ static void	ft_init_map(t_window *win)
 	g_map.obs.jaba = "./assets/C.xpm";
 	g_map.igh = 40;
 	g_map.igw = 40;
-	ft_inc_map(g_map, CENTER, true);
+	ft_inc_map(g_map, CENTER, TRUE);
 }
 
 int	main(int c, char *v[])

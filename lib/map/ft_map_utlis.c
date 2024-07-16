@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 20:16:18 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/13 19:01:47 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 13:52:42 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_read_map(int fd)
 	return (ft_strdup(map));
 }
 
-void	ft_get_item_map(t_map	*map)
+void	ft_get_item_map(t_map *map)
 {
 	map->items.jaba = ft_count_item(map->map, 'C');
 	map->items.player = ft_count_item(map->map, 'P');
@@ -46,22 +46,22 @@ void	ft_get_item_map(t_map	*map)
 	map->items.empty = ft_count_item(map->map, '0');
 }
 
-int ft_count_item(char **map, char item)
+int	ft_count_item(char **map, char item)
 {
 	t_point	point;
-    int i;
+	int		i;
 
 	point.y = 0;
-    i = 0;
+	i = 0;
 	while (map[point.y])
 	{
 		point.x = 0;
 		while (map[point.y][point.x])
 		{
-            if (map[point.y][point.x] == item)
-                i++;
-            point.x++;
-        }
+			if (map[point.y][point.x] == item)
+				i++;
+			point.x++;
+		}
 		point.y++;
 	}
 	return (i);

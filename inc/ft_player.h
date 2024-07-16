@@ -6,13 +6,14 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 17:32:16 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/15 18:37:19 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 09:22:07 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PLAYER_H
 
 # define FT_PLAYER_H
+
 typedef struct s_player
 {
 	int	stepd;

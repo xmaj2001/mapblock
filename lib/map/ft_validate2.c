@@ -6,14 +6,22 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 15:39:22 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/15 18:52:10 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 17:05:41 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../so_long.h"
 #include <fcntl.h>
 
-static bool	ft_is_valide_width2(char **map)
+int	ft_plus(char **map, t_size size, t_point p)
+{
+	if (map[size.height - 1][p.x] != '1' && map[size.height - 1][p.x] != '\n')
+		return (FALSE);
+	else
+		return (TRUE);
+}
+
+static int	ft_is_valide_width2(char **map)
 {
 	t_point	p;
 	t_size	size;
@@ -23,47 +31,47 @@ static bool	ft_is_valide_width2(char **map)
 	while (map[0][p.x])
 	{
 		if (map[0][p.x] != '1' && map[0][p.x] != '\n')
-			return (false);
+			return (FALSE);
 		p.x++;
 	}
 	while (map[p.y] && p.y < size.height)
 	{
 		if (map[p.y][0] != '1' || map[p.y][size.width - 1] != '1')
-			return (false);
+			return (FALSE);
 		p.y++;
 	}
 	p.x = 0;
 	while (map[size.height - 1][p.x])
 	{
-		if (map[size.height - 1][p.x] != '1' && map[size.height
-			- 1][p.x] != '\n')
-			return (false);
+		if (ft_plus(map, size, p) == FALSE)
+			return (FALSE);
 		p.x++;
 	}
-	return (true);
+	return (TRUE);
 }
 
-bool	ft_validate_map(char **map, t_items items)
+int	ft_validate_map(char **map, t_items items)
 {
-	if (ft_is_valide_width(map) == false)
+	if (ft_is_valide_width(map) == FALSE)
 	{
-		ft_printf("Error\nTHE WIDTH OF THE MAP IS INCORRECT\n");
-		return (false);
+		ft_printf("Error\nA LARGURA DO MAPA ESTÁ INCORRETA\n");
+		return (FALSE);
 	}
-	if (ft_is_valide_width2(map) == false)
+	if (ft_is_valide_width2(map) == FALSE)
 	{
-		ft_printf("Error\nTHE MAP IS NOT COMPLETELY SURROUNDED WITH WALLS.\n");
-		return (false);
+		ft_printf("Error\nO MAPA NÃO ESTÁ COMPLETAMENTE CERCADO DE PAREDES.\n");
+		return (FALSE);
 	}
-	else if (ft_is_rectangle(ft_get_size_map(map)) == false)
+	else if (ft_is_rectangle(ft_get_size_map(map)) == FALSE)
 	{
-		ft_printf("Error\nTHE MAP IS NOT RECTANGULAR\n");
-		return (false);
+		ft_printf("Error\nO MAPA NÃO É RETANGULAR\n");
+		return (FALSE);
 	}
-	else if (ft_is_valide_items(items) == false)
+	else if (ft_is_valide_items(items) == FALSE)
 	{
-		ft_printf("Error\nTHE MAP DOES NOT COUNT THE NUMBER OF REQUIRED ITEMS\n");
-		return (false);
+		ft_printf("Error\nO MAPA NÃO CONTA ");
+		ft_printf("O NÚMERO DE ITENS NECESSÁRIOS\n");
+		return (FALSE);
 	}
 	else
 	{
@@ -71,14 +79,14 @@ bool	ft_validate_map(char **map, t_items items)
 	}
 }
 
-static void	ft_ms_error(stringg path)
+static void	ft_ms_error(char *path)
 {
 	ft_printf("Error\n");
-	ft_printf("INVALID MAP\npath: %s \n", path);
+	ft_printf("MAPA INVÁLIDO\ncaminho: %s \n", path);
 	exit(1);
 }
 
-int	ft_open_map(stringg path)
+int	ft_open_map(char *path)
 {
 	size_t	len;
 	int		fd;

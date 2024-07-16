@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 18:07:40 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/14 20:17:21 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 17:11:07 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@
 # include "./inc/hook/ft_events.h"
 # include "./inc/hook/ft_hook.h"
 # include "./inc/hook/ft_keyboard_code.h"
-# include "./inc/hook/ft_mouse_code.h"
 # include "./inc/ft_image.h"
 # include "./inc/ft_map.h"
 # include "./inc/ft_player.h"
-
-# endif
+#endif

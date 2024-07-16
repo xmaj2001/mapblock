@@ -6,13 +6,13 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 15:56:53 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/15 18:48:22 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 10:44:03 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../so_long.h"
 
-void	ft_inc_map(t_map map, enum e_postion postion, bool animation)
+void	ft_inc_map(t_map map, enum e_postion postion, int animation)
 {
 	t_point	point;
 	t_point	ps;

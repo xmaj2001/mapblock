@@ -6,22 +6,11 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 17:39:03 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/13 18:27:11 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/16 12:58:26 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../so_long.h"
-
-static int	action_key(int key, t_action *action)
-{
-	if (key == action->key)
-		action->f();
-	return (0);
-}
-void	ft_action(t_window *window, t_action *action)
-{
-	mlx_key_hook(window->win, action_key, action);
-}
 
 void	ft_hook(t_window *window, t_event event, int (*funct)(), void *param)
 {
@@ -30,5 +19,5 @@ void	ft_hook(t_window *window, t_event event, int (*funct)(), void *param)
 
 void	ft_destroy_event(t_window *window, int (*funct)(), void *param)
 {
-	ft_hook(window, DESTROY, funct, param);
+	ft_hook(window, (t_event){17, 1L << 0}, funct, param);
 }
