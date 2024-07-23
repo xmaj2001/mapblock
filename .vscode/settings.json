@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "ft_map.h": "c",
+        "libftx.h": "c",
+        "so_long.h": "c"
+    }
+}
