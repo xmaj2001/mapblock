@@ -1,5 +1,7 @@
 # so_long
 
+<!-- cria uma imagem -->
+![so_long](./assets/map0.png)
 O projeto **so_long** faz parte do currículo da Escola 42 e consiste na criação de um jogo simples, em 2D, onde o jogador deve coletar itens e encontrar a saída do mapa. O projeto utiliza a biblioteca MinilibX para a renderização gráfica e possui uma série de funcionalidades que permitem a interação com o ambiente do jogo.
 
 ## Funcionalidades
