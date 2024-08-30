@@ -28,12 +28,15 @@ Use o comando `make` para compilar o projeto. Isso irá gerar o executável `so_
 ```bash
 make
 
+```
+
 ## Executando o Jogo
 
 Para iniciar o jogo, execute o seguinte comando
 
-bash
+```bash
 ./so_long
+```
 
 O jogador será capaz de controlar o personagem para coletar todos os itens no mapa e depois acessar a saída.
 
@@ -54,8 +57,7 @@ Exemplo de Mapa
 
 ## Formato do Mapa
 
-bash
-``
+```bash
 111111111111111111111111
 1P0000000000000000000001
 1000000000000C00000000C1
@@ -70,7 +72,7 @@ bash
 1000000000000000001C0001
 10000CCCC000000000000001
 111111111111111111111111
-``
+```
 
 Jogo em Execução
 
