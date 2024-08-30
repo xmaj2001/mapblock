@@ -42,10 +42,11 @@ O jogador será capaz de controlar o personagem para coletar todos os itens no m
 
 ## Controles
 
-    - **WASD**: Movimentam o personagem (cima W, baixo S, esquerda A, direita D).
-    - **ESC**: Encerra o jogo.
+    - WASD : Movimentam o personagem (cima W, baixo S, esquerda A, direita D).
+    - ESC : Encerra o jogo.
     
 ## Requisitos
+
     - Linguagem: C
     - Bibliotecas: MinilibX, X11 (para ambientes Unix/Linux)
 
