@@ -1,7 +1,5 @@
 # so_long
 
-<!-- cria uma imagem -->
-![so_long](./assets/so_long.png)
 O projeto **so_long** faz parte do currículo da Escola 42 e consiste na criação de um jogo simples, em 2D, onde o jogador deve coletar itens e encontrar a saída do mapa. O projeto utiliza a biblioteca MinilibX para a renderização gráfica e possui uma série de funcionalidades que permitem a interação com o ambiente do jogo.
 
 ## Funcionalidades
@@ -42,21 +40,20 @@ O jogador será capaz de controlar o personagem para coletar todos os itens no m
 
 ## Controles
 
-    - WASD : Movimentam o personagem (cima W, baixo S, esquerda A, direita D).
-    - ESC : Encerra o jogo.
-    
+- **WASD** : Movimentam o personagem (cima W, baixo S, esquerda A, direita D).
+- **ESC** : Encerra o jogo.
+
 ## Requisitos
 
-    - Linguagem: C
-    - Bibliotecas: MinilibX, X11 (para ambientes Unix/Linux)
+- **Linguagem**: C
+- **Bibliotecas**: MinilibX, X11 (para ambientes Unix/Linux)
 
 Norminette: O código segue o padrão da Norminette, a convenção de código da Escola 42.
 Imagens do Jogo
-Menu Inicial
 
-Exemplo de Mapa
+## Exemplo de Mapa
 
-## Formato do Mapa
+### Formato do Mapa
 
 ```bash
 111111111111111111111111
@@ -75,22 +72,44 @@ Exemplo de Mapa
 111111111111111111111111
 ```
 
-Jogo em Execução
+![so_long](./assets/so_long.png)
+
+## Jogo em Execução
+
+![so_long](./assets/map0.png)
+
+## Imagens
+
+### MENU INICIAL
+
+![so_long](./assets/start_menu.png)
+
+### MENU MAPA
+
+![so_long](./assets/maps.png)
+
+### MAPA DE JOGO
+
+![so_long](./assets/map0.png)
 
 Essas imagens mostram a aparência do jogo, incluindo o menu inicial, o mapa de jogo e a interação do terminal.
 
-Mapas
+## Mapas
+
 Os mapas do jogo estão localizados na pasta maps/. Cada mapa é um arquivo .ber que define o layout do nível. Exemplo de mapas disponíveis:
 
-map0.ber: Mapa inicial básico para introdução ao jogo.
-map1.ber: Mapa com maior complexidade e desafios.
-Considerações
-Gerenciamento de Memória: O projeto cuida do gerenciamento de memória para evitar vazamentos durante a execução.
-Colisões: O sistema de colisão previne que o jogador atravesse paredes ou se mova para fora do mapa.
-Mapas Customizados: Você pode criar seus próprios mapas seguindo o formato dos arquivos .ber existentes.
-Futuras Melhorias
-Adicionar novos tipos de inimigos e obstáculos.
-Implementar um sistema de pontuação baseado no tempo e número de movimentos.
-Criar novos níveis com maior complexidade e diferentes tipos de terrenos.
-Autor
-Max (Xavier Moisés Alberto José) - xmaj2001
+- map0.ber: Mapa inicial básico para introdução ao jogo.
+- map1.ber: Mapa com maior complexidade e desafios.
+
+## Considerações
+
+- **Gerenciamento de Memória**: O projeto cuida do gerenciamento de memória para evitar vazamentos durante a execução.
+- **Colisões**: O sistema de colisão previne que o jogador atravesse paredes ou se mova para fora do mapa.
+- **Mapas Customizados**: Você pode criar seus próprios mapas seguindo o formato dos arquivos .ber existentes.
+
+## Futuras Melhorias
+
+- Adicionar novos tipos de inimigos e obstáculos.
+- Implementar um sistema de pontuação baseado no tempo e número de movimentos.
+- Criar novos níveis com maior complexidade e diferentes tipos de terrenos.
+  
