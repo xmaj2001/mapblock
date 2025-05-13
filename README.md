@@ -2,6 +2,8 @@
 
 O projeto **so_long** faz parte do currículo da Escola 42 Luanda e consiste na criação de um jogo simples, em 2D, onde o jogador deve coletar itens e encontrar a saída do mapa. O projeto utiliza a biblioteca MinilibX para a renderização gráfica e possui uma série de funcionalidades que permitem a interação com o ambiente do jogo.
 
+![so_long](https://github.com/xmaj2001/so_long/raw/main/assets/so_long.png)
+
 ## Funcionalidades
 
 - Movimento básico do personagem usando as teclas AWSD.
@@ -72,25 +74,25 @@ Imagens do Jogo
 111111111111111111111111
 ```
 
-![so_long](./assets/so_long.png)
+![so_long](https://github.com/xmaj2001/so_long/raw/main/assets/so_long.png)
 
 ## Jogo em Execução
 
-![so_long](./assets/map0.png)
+![so_long](https://github.com/xmaj2001/so_long/raw/main/assets/map0.png)
 
 ## Imagens
 
 ### MENU INICIAL
 
-![so_long](./assets/start_menu.png)
+![so_long](https://github.com/xmaj2001/so_long/raw/main/assets/start_menu.png)
 
 ### MENU MAPA
 
-![so_long](./assets/maps.png)
+![so_long](https://github.com/xmaj2001/so_long/raw/main/assets/maps.png)
 
 ### MAPA DE JOGO
 
-![so_long](./assets/map0.png)
+![so_long](https://github.com/xmaj2001/so_long/raw/main/assets/map0.png)
 
 Essas imagens mostram a aparência do jogo, incluindo o menu inicial, o mapa de jogo e a interação do terminal.
 
