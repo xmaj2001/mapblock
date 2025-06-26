@@ -1,6 +1,6 @@
-# so_long
+# Map Block
 
-O projeto **so_long** faz parte do currículo da Escola 42 Luanda e consiste na criação de um jogo simples, em 2D, onde o jogador deve coletar itens e encontrar a saída do mapa. O projeto utiliza a biblioteca MinilibX para a renderização gráfica e possui uma série de funcionalidades que permitem a interação com o ambiente do jogo.
+O projeto **Map Block** Consiste na criação de um jogo simples, em 2D, onde o jogador deve coletar itens e encontrar a saída do mapa. O projeto utiliza a biblioteca MinilibX para a renderização gráfica e possui uma série de funcionalidades que permitem a interação com o ambiente do jogo.
 
 ![so_long](https://github.com/xmaj2001/so_long/raw/main/assets/so_long.png)
 
